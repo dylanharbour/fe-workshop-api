@@ -48,9 +48,14 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'tracked-local' => [
+            'driver' => 'local',
+            'root' => storage_path('tracked-storage'),
+        ],
+
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
+            'root' => app_path('app/public'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],

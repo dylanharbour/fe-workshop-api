@@ -10,7 +10,7 @@ class CitiesSeeder extends Seeder
      */
     public function run()
     {
-        $files = Storage::disk('local')
+        $files = Storage::disk('tracked-local')
             ->get('citiesOverPop5000.json');
 
         $data = collect(json_decode($files,1))
