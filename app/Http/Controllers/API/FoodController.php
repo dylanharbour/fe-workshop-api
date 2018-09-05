@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Food;
+use App\Http\Requests\FoodSearchRequest;
 use App\Http\Resources\Food as FoodResource;
 use App\Http\Resources\FoodCollection;
 use Illuminate\Http\Request;
@@ -13,7 +14,7 @@ class FoodController extends Controller
     /**
      * @return FoodCollection
      */
-    public function index(Request $request)
+    public function index(FoodSearchRequest $request)
     {
         $query = Food::query();
 
