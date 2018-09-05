@@ -4,6 +4,21 @@ use Illuminate\Database\Seeder;
 
 class FoodTableSeeder extends Seeder
 {
+
+    /**
+     * @var \Faker\Generator
+     */
+    protected $generator;
+
+    /**
+     * FoodTableSeeder constructor.
+     * @param \Faker\Generator $generator
+     */
+    public function __construct(Faker\Generator $generator)
+    {
+        $this->generator = $generator;
+    }
+
     /**
      * Run the database seeds.
      *
@@ -36,7 +51,10 @@ class FoodTableSeeder extends Seeder
                 'link' =>  $data['href'],
                 'image' => $data['thumbnail'],
                 'ingredients' => $data['ingredients'],
-                'description' => $data['ingredients'],
+                'description' => $this->generator->realText(),
+                'city_id' => \App\City::inRandomOrder()->first()->id,
+                'feeds_count' => rand(1,6),
+                'price' => rand(10,150),
             ];
         });
 
