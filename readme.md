@@ -9,15 +9,15 @@
 * Recommend or rule out a JS frontend implementation based on the above. Compile enough information for ventures to be more confident in their intended direction.
 * Use the gained knowledge from this process to help direct future Group Engineering or shared resource projects. E.g. Common shared components on a specific framework
 
-## UX Intro : HomeFoodie
+##UX Intro : HomeFoodie
 
-## API Intro
+##API Intro
     Currently we have 3 API endpoints
     1. List / Search
     2. Detail Show 
     3. List Cities  
     
-## Requirements
+##Requirements
 Build a frontend to consume the API's provided. Use the UX design as a guide for 
 your implementation. Some important notes:
 
@@ -47,9 +47,14 @@ Styling / Design is not the objective of this workshop.
 ##Endpoints
 
 * Menu item detail	/ show page 
-    http://fe-workshop.dylanharbour.com/api/food/
-* Menu Item Index / List Page
     http://fe-workshop.dylanharbour.com/api/food/1
+
+* Menu Item Index / List Page
+    http://fe-workshop.dylanharbour.com/api/food/
+
+* City List Page
+    http://fe-workshop.dylanharbour.com/api/city/
+
 * Pagination
 	http://fe-workshop.dylanharbour.com/api/food/?page=3
 * Filtering
