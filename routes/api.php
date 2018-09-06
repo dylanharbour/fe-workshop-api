@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::apiResources([
     'food' => 'API\FoodController',
+    'city' => 'API\CityController',
 ]);

@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 class FoodController extends Controller
 {
     /**
+     * @param FoodSearchRequest $request
      * @return FoodCollection
      */
     public function index(FoodSearchRequest $request)
